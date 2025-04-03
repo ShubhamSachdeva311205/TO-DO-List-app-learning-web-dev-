@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.task-input-container {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.task-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.task-filters button {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.task-filters button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-checkbox {
+  margin-right: 10px;
+}
+
+.task-text {
+  flex-grow: 1;
+}
+
+.task-date {
+  margin: 0 10px;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.task-delete {
+  background-color: #f44336;
+  padding: 5px 10px;
+  font-size: 0.8em;
+}
+
+.empty-message {
+  color: #888;
+  text-align: center;
+  font-style: italic;
+  padding: 20px;
+}
+
+.calendar-container {
+  margin-bottom: 30px;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.calendar-day {
+  border: 1px solid #ddd;
+  padding: 10px;
+  min-height: 80px;
+  background-color: white;
+}
+
+.calendar-day-header {
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  background-color: #f1f1f1;
+}
+
+.calendar-date {
+  text-align: right;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.calendar-task {
+  font-size: 0.8em;
+  margin: 2px 0;
+  padding: 2px 5px;
+  background-color: #e1f5fe;
+  border-radius: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.calendar-task.completed {
+  background-color: #e8f5e9;
+  text-decoration: line-through;
+}

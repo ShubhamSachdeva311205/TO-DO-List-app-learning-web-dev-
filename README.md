@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>README - Enhanced To-Do List</title>
 </head>
 <body>
   <h1>Enhanced To-Do List</h1>
@@ -34,9 +33,9 @@
     <li>Open your browser and visit: <code>http://localhost:3000</code></li>
   </ol>
 
-  <h2>Screenshots</h2>
+
   <!-- Add screenshots of your application here -->
-  <p>(Include relevant screenshots of the app interface)</p>
+
 
   <h2>API Endpoints</h2>
   <ul>
